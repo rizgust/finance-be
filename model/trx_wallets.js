@@ -24,10 +24,6 @@ function makeModel (sequelize){
     updated_by:{ type:DataTypes.INTEGER },
     debit:{ type:DataTypes.BOOLEAN },
     isActive:{ type:DataTypes.BOOLEAN },
-    createdAt:{ type:DataTypes.DATE },
-    updatedAt:{ type:DataTypes.DATE },
-    addedBy:{ type:DataTypes.INTEGER },
-    updatedBy:{ type:DataTypes.INTEGER },
     isDeleted:{ type:DataTypes.BOOLEAN }
   }
   ,{

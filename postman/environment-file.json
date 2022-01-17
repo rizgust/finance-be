@@ -1,5 +1,5 @@
 {
-  "id": "ef715c14-936c-46e5-8c54-ebebddac555f",
+  "id": "b266a0af-4043-4186-b12d-4de118bd0323",
   "name": "core_environment",
   "values": [
     {
@@ -14,6 +14,6 @@
     }
   ],
   "_postman_variable_scope": "environment",
-  "_postman_exported_at": "2022-01-14T04:02:00.778Z",
+  "_postman_exported_at": "2022-01-17T01:49:23.793Z",
   "_postman_exported_using": "Postman"
 }

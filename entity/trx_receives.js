@@ -47,10 +47,6 @@ function buildMakeTrx_receives ({
       updated_by:data.updated_by,
       journal_id:data.journal_id,
       isActive:data.isActive,
-      createdAt:data.createdAt,
-      updatedAt:data.updatedAt,
-      addedBy:data.addedBy,
-      updatedBy:data.updatedBy,
       isDeleted:data.isDeleted,
     };
   };

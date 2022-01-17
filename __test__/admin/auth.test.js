@@ -30,11 +30,11 @@ describe('POST /register -> if email and username is given', () => {
     let registeredUser = await request(app)
       .post('/admin/auth/register')
       .send({
-        'username':'Liza.Maggio41',
-        'password':'SA8d_uwn6j8nF1I',
-        'email':'Jany86@yahoo.com',
-        'name':'Victor Bruen',
-        'mobileNo':'1-966-786-5738',
+        'username':'Melba39',
+        'password':'wICmthDIzsh9ntw',
+        'email':'Macey_Hansen@yahoo.com',
+        'name':'Rafael Parisian',
+        'mobileNo':'460.325.1189 x6910',
         'role':authConstant.USER_ROLE.Admin
       });
     expect(registeredUser.headers['content-type']).toEqual('application/json; charset=utf-8');
@@ -50,8 +50,8 @@ describe('POST /login -> if username and password is correct', () => {
       .post('/admin/auth/login')
       .send(
         {
-          username: 'Liza.Maggio41',
-          password: 'SA8d_uwn6j8nF1I'
+          username: 'Melba39',
+          password: 'wICmthDIzsh9ntw'
         }
       );
     expect(user.headers['content-type']).toEqual('application/json; charset=utf-8');
@@ -71,7 +71,7 @@ describe('POST /login -> if username is incorrect', () => {
       .send(
         {
           username: 'wrong.username',
-          password: 'SA8d_uwn6j8nF1I'
+          password: 'wICmthDIzsh9ntw'
         }
       );
 
@@ -87,7 +87,7 @@ describe('POST /login -> if password is incorrect', () => {
       .post('/admin/auth/login')
       .send(
         {
-          username: 'Liza.Maggio41',
+          username: 'Melba39',
           password: 'wrong@password'
         }
       );
@@ -146,7 +146,7 @@ describe('POST /forgot-password -> if email passed from request body is valid an
     ];
     let user = await request(app)
       .post('/admin/auth/forgot-password')
-      .send({ 'email':'Jany86@yahoo.com', });
+      .send({ 'email':'Macey_Hansen@yahoo.com', });
 
     expect(user.headers['content-type']).toEqual('application/json; charset=utf-8');
     expect(user.body.status).toBe('SUCCESS');
@@ -161,8 +161,8 @@ describe('POST /validate-otp -> otp is sent in request body and OTP is correct',
       .post('/admin/auth/login')
       .send(
         {
-          username: 'Liza.Maggio41',
-          password: 'SA8d_uwn6j8nF1I'
+          username: 'Melba39',
+          password: 'wICmthDIzsh9ntw'
         }).then(login => () => {
         return request(app)
           .get(`/admin/user/${login.body.data.id}`)
@@ -212,8 +212,8 @@ describe('PUT /reset-password -> code is sent in request body and code is correc
       .post('/admin/auth/login')
       .send(
         {
-          username: 'Liza.Maggio41',
-          password: 'SA8d_uwn6j8nF1I'
+          username: 'Melba39',
+          password: 'wICmthDIzsh9ntw'
         }).then(login => () => {
         return request(app)
           .get(`/admin/user/${login.body.data.id}`)
