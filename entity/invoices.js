@@ -64,10 +64,6 @@ function buildMakeInvoices ({
       admission_line_id:data.admission_line_id,
       admission_batch_id:data.admission_batch_id,
       isActive:data.isActive,
-      createdAt:data.createdAt,
-      updatedAt:data.updatedAt,
-      addedBy:data.addedBy,
-      updatedBy:data.updatedBy,
       isDeleted:data.isDeleted,
     };
   };

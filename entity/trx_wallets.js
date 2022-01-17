@@ -46,10 +46,6 @@ function buildMakeTrx_wallets ({
       updated_by:data.updated_by,
       debit:data.debit,
       isActive:data.isActive,
-      createdAt:data.createdAt,
-      updatedAt:data.updatedAt,
-      addedBy:data.addedBy,
-      updatedBy:data.updatedBy,
       isDeleted:data.isDeleted,
     };
   };

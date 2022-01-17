@@ -764,76 +764,6 @@ async function seedRouteRole () {
         method: 'DELETE'
       },
       {
-        route: '/admin/schema_migrations/create',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/schema_migrations/addbulk',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/schema_migrations/list',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/schema_migrations/:id',
-        role: 'System_User',
-        method: 'GET'
-      },
-      {
-        route: '/admin/schema_migrations/:id',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/schema_migrations/count',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/schema_migrations/aggregate',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/schema_migrations/update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/schema_migrations/partial-update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/schema_migrations/updatebulk',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/schema_migrations/softdelete/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/schema_migrations/softdeletemany',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/schema_migrations/delete/:id',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
-        route: '/admin/schema_migrations/deletemany',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
         route: '/admin/purchases/create',
         role: 'System_User',
         method: 'POST'
@@ -3074,76 +3004,6 @@ async function seedRouteRole () {
         method: 'DELETE'
       },
       {
-        route: '/device/api/v1/schema_migrations/create',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/addbulk',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/list',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/:id',
-        role: 'System_User',
-        method: 'GET'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/:id',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/count',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/aggregate',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/partial-update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/updatebulk',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/softdelete/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/softdeletemany',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/delete/:id',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
-        route: '/device/api/v1/schema_migrations/deletemany',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
         route: '/device/api/v1/purchases/create',
         role: 'System_User',
         method: 'POST'
@@ -4721,7 +4581,7 @@ async function seedRouteRole () {
 async function seedUserRole (){
   try {
     let user = await userDbService.findOne({
-      'username':'Odie_Gaylord',
+      'username':'Jess20',
       'isActive':true,
       'isDeleted':false
     });
@@ -4744,7 +4604,7 @@ async function seedUserRole (){
       }
     }
     let admin = await userDbService.findOne({
-      'username':'Dylan.Herzog77',
+      'username':'Terrence42',
       'isActive':true,
       'isDeleted':false
     });
@@ -4774,27 +4634,27 @@ async function seedUserRole (){
 async function seedUser () {
   try {
     let user = await userDbService.findOne({
-      'username':'Odie_Gaylord',
+      'username':'Jess20',
       'isActive':true,
       'isDeleted':false
     });
-    if (!user || !user.isPasswordMatch('J17qhItht3DZJxo')) {
+    if (!user || !user.isPasswordMatch('EI6zYiCyJYxlG8i')) {
       let user = {
-        'password':'J17qhItht3DZJxo',
-        'username':'Odie_Gaylord',
+        'password':'EI6zYiCyJYxlG8i',
+        'username':'Jess20',
         'role':authConstant.USER_ROLE.User
       };
       await userDbService.createOne(user);
     }
     let admin = await userDbService.findOne({
-      'username':'Dylan.Herzog77',
+      'username':'Terrence42',
       'isActive':true,
       'isDeleted':false
     });
-    if (!admin || !admin.isPasswordMatch('q5zSf2C6oadKpmA')) {
+    if (!admin || !admin.isPasswordMatch('ITYEf58Ucf0BThI')) {
       let admin = {
-        'password':'q5zSf2C6oadKpmA',
-        'username':'Dylan.Herzog77',
+        'password':'ITYEf58Ucf0BThI',
+        'username':'Terrence42',
         'role':authConstant.USER_ROLE.Admin
       };
       await userDbService.createOne(admin);

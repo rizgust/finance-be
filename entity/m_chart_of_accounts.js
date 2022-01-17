@@ -46,10 +46,6 @@ function buildMakeM_chart_of_accounts ({
       deleted_at:data.deleted_at,
       deleted_by:data.deleted_by,
       isActive:data.isActive,
-      createdAt:data.createdAt,
-      updatedAt:data.updatedAt,
-      addedBy:data.addedBy,
-      updatedBy:data.updatedBy,
       isDeleted:data.isDeleted,
     };
   };

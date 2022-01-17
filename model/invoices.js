@@ -42,10 +42,6 @@ function makeModel (sequelize){
     admission_line_id:{ type:DataTypes.INTEGER },
     admission_batch_id:{ type:DataTypes.INTEGER },
     isActive:{ type:DataTypes.BOOLEAN },
-    createdAt:{ type:DataTypes.DATE },
-    updatedAt:{ type:DataTypes.DATE },
-    addedBy:{ type:DataTypes.INTEGER },
-    updatedBy:{ type:DataTypes.INTEGER },
     isDeleted:{ type:DataTypes.BOOLEAN }
   }
   ,{

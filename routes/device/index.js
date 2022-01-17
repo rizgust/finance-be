@@ -8,7 +8,6 @@ router.use(require('./trx_receive_detailsRoutes'));
 router.use(require('./trx_expensesRoutes'));
 router.use(require('./trx_expense_detailsRoutes'));
 router.use(require('./trx_bank_transfersRoutes'));
-router.use(require('./schema_migrationsRoutes'));
 router.use(require('./purchasesRoutes'));
 router.use(require('./m_virtual_accountsRoutes'));
 router.use(require('./m_discountsRoutes'));
